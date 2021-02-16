@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="questionList" class="q2.Question">
+		<property name="questionId" value="1"/>
+		<property name="question" value="Your Family Details"/>
+		<property name="answersList">
+			<list>
+				<value>Ramesh</value>
+				<value>Lakshmi</value>
+				<value>Jyothi</value>
+				<value>Megu</value>
+			</list>
+		</property>
+	
+		<property name="answersSet">
+			<set>
+			<value>Ramesh</value>
+				<value>Lakshmi</value>
+				<value>Jyothi</value>
+				<value>Megu</value>
+			</set>
+		</property>
+		<property name="answersMap">
+			<map>
+				 <entry key="1" value="Ramesh"/>
+	            <entry key="2" value="Lakshmi"/>
+	            <entry key="1" value="Ramesh"/>
+	            <entry key="3" value="Jyothi"/>
+	            <entry key="4" value="Megu"/>
+			</map>
+		</property>
+		
+	</bean>
+
+
+
+
+</beans>
