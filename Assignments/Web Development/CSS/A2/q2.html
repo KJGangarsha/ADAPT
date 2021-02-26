@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q2 survey form</title>
+    <link rel="stylesheet" type="text/css" href="q2.css" media="screen"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">PASSPORT Application Form</h1>
+            <p id="description" class="description tecxt-center">
+                Passport is an identity proof which states that you are a citizen of your country.
+                 Abiding Rules may cause legal action. Thankyou.
+            </p>
+
+        </header>
+        <form id="passport form">
+            <div class="form-group">
+                <label id="name-label" for="name">Full Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required/>
+
+            </div>
+            <div class="form-group">
+                <label id="email-label;" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required/>
+            </div>
+            <div class="form-group">
+                <label id="anumber-label;" for="anumber">Aadhar number</label>
+                <input type="number" name="anumber" id="anumber" class="form-control" placeholder="Aadhar number" required/>
+            </div>
+            <div class="form-group">
+                <label id="pnumber-label;" for="phone">Mobile Number</label>
+                <input type="tel" name="phone" id="phone" class="form-control" placeholder="phone" required/>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label;" for="Age">Age</label>
+                <input type="number" name="Age" id="Age" min="18" max="150" class="form-control" placeholder="Age" required/>
+            </div>
+
+            <div class="form-group">
+                <label id="place-label;" for="place">Place of Birth</label>
+                <input type="text" name="place" id="place" class="form-control" placeholder="state/district" required/>
+            </div>
+
+            Gender
+            <div class="form-group">
+                <div>
+                <label id="gender-label;" for="gender">Male</label>
+                <input type="radio" name="gender" id="Male" class="form-control"/>
+                </div>
+                <div>
+                    <label id="gender-label;" for="gender">female</label>
+                    <input type="radio" name="gender" id="Female" class="form-control"/>
+                </div>
+                <div>
+                    <label id="gender-label;" for="gender">Others</label>
+                    <input type="radio" name="gender" id="Others" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="date-label;" for="dob">DOB</label>
+                <input type="date" name="dob" id="dob" class="form-control" placeholder="DOB" required/>
+            </div>
+
+            <div class="form-group">
+                <p>Marital Status?</p>
+                <select id="dropdown" name="marital status" class="form-control" required>
+                  <option disabled selected value>Select current status</option>
+                  <option value="single">Single</option>
+                  <option value="Married">Married</option>
+                  <option value="Widowed">Widowed</option>
+                  <option value="Divorced">Divorced</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <p>Educational Qualification</p>
+                <select id="dropdown" name="Educational qualification" class="form-control" required>
+                  <option disabled selected value>Select current Educational Qualification</option>
+                  <option value="UnderGraduate">UnderGraduate</option>
+                  <option value="Post Graduate">Post Graduate</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="ssc">SSC</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <p>Employment type</p>
+                <select id="dropdown" name="Employment type" class="form-control" required>
+                  <option disabled selected value>Select current Employment type</option>
+                  <option value="Private">Private</option>
+                  <option value="Government">Government</option>
+                  <option value="Self-Employed">Self-Employed</option>
+                  <option value="Business">Business</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label id="pan-label" for="pan">PAN (if available)</label>
+                <input type="text" name="pan" id="pan" class="form-control" placeholder="PAN Number" />
+
+            </div>
+
+            <div class="form-group">
+                <label id="voterid-label" for="voterid">Voter Id (If available)</label>
+                <input type="text" name="voterid" id="voterid" class="form-control" placeholder="voter number"/>
+
+            </div>
+
+            <div class="form-group">
+                <label id="mark-label;" for="mark">Distinguishing marks</label>
+                <input type="text" name="mark" id="mark"  class="form-control" placeholder="Moles" required/>
+            </div>
+            
+            Family Details
+            <div class="form-group">
+                <div class="form-group">
+                    <label id="father-label;" for="Father">Father Name</label>
+                    <input type="text" name="place" id="Father" class="form-control" placeholder="Father/Guardian Name" required/>
+                </div>
+                <div class="form-group">
+                    <label id="mother-label;" for="mother">Mother Name</label>
+                    <input type="text" name="mother" id="mother" class="form-control" placeholder="Mother Name" required/>
+                </div>
+                <div class="form-group">
+                    <label id="sibling-label;" for="sibling">Siblings if any*</label>
+                    <input type="text" name="sibling" id="sibling" class="form-control" placeholder="Sibling name"/>
+                </div>
+
+            </div>     
+
+            <div class="form-group">
+                Address
+                <textarea
+                  id="address"
+                  class="input-textarea"
+                  name="address"
+                  placeholder="Enter your address here..."
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="reset" id="reset" class="reset-button">
+                  Reset
+                </button>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+
+        </form>
+    </div>
+</body>
+</html>

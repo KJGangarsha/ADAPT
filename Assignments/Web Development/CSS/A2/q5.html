@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="q5.css">
+  <link rel="stylesheet" href="q5_1.css">
+  <title>Restaurant Website!</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="">Starters</a>
+            </li>
+            <li>
+              <a href="">Main Course</a>
+            </li>
+            <li>
+              <a href="">Drinks</a>
+            </li>
+            <li>
+              <a href="">Desserts</a>
+            </li>
+            <li>
+              <a href="">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+    <div class="top">
+      <header class="hero">
+        <h1>Hyderbadi Dhum Biryani</h1>
+        <p>Mouth Watering taste!</p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">250/-</p>
+        <p>Dhum Biryani</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">200/-</p>
+        <p>Chicken 65</p>
+      </div>
+
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🍠🍤🍖🍗</span>
+        <h3>Starters</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍽</span>
+        <h3>Main Course</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🍷🥂🍹</span>
+        <h3>Drinks</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🎂🍩🍨</span>
+        <h3>Desserts</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnJUXfOgAhidbT5HhHoam-6F8_WhL-SAT8Mg&usqp=CAU" alt="" class="about__mockup">
+      <div class="about__details">
+        <h2>Hyderbadi Dhum Biryani</h2>
+        <p>Sexy spices with grilled chicken pieces</p>
+        <p>Your mouth is blessed to have this</p>
+        <button>Learn More →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Instant Grams</h2>
+      <img src="https://source.unsplash.com/random/201x201" alt="">
+      <img src="https://source.unsplash.com/random/202x202" alt="">
+      <img src="https://source.unsplash.com/random/203x203" alt="">
+      <img src="https://source.unsplash.com/random/204x204" alt="">
+      <img src="https://source.unsplash.com/random/205x205" alt="">
+      <img src="https://source.unsplash.com/random/206x206" alt="">
+      <img src="https://source.unsplash.com/random/207x207" alt="">
+      <img src="https://source.unsplash.com/random/207x208" alt="">
+      <img src="https://source.unsplash.com/random/207x209" alt="">
+      <img src="https://source.unsplash.com/random/207x210" alt="">
+      <img src="https://source.unsplash.com/random/207x211" alt="">
+      <img src="https://source.unsplash.com/random/207x212" alt="">
+      
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
